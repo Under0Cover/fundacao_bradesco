@@ -1,0 +1,13 @@
+p {color: wheat; font-size: 20px;}
+/* Utilizando o background para definir a cor */
+body {background-color: red;}
+/* Utilizando o background para definir a imagem de fundo */
+/* body {background-image: url(../imagens/perfil.png);} */
+/* Utilizando o background para definir a posição da imagem */
+/* body {background-image: url(../imagens/perfil.png); background-position: 10px 30px;} */
+/* Utilizando o background para definir a repetição ou não da imagem de fundo */
+/* body {background-image: url(../imagens/perfil.png); background-position: 10px 30px; background-repeat: no-repeat;} */
+/* Utilizando o background para definir o compartamento da imagem com relação ao scroll da tela */
+/* body {background-image: url(../imagens/perfil.png); background-position: 10px 30px; background-repeat: no-repeat; background-attachment: scroll;} */
+/* Utilizando o background para definir o tamanho da imagem */
+/* body {background-image: url(../imagens/perfil.png); background-position: 10px 30px; background-repeat: no-repeat; background-attachment: scroll; background-size: 450px 450px} */
