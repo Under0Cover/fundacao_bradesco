@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atributos</title>
+</head>
+<body>
+    <!-- Atributos utilizados até agora na tag TD -->
+    <h1>Atributos</h1>
+    <h2>ALIGN</h2>
+    <table width="300" height="20%" border="2">
+    <!-- O atributo align alinha horizontalmente os dados de uma célula -->
+        <tr bgcolor="#e0eeee">
+            <td align="left"><strong>Nome</strong></td>
+            <td align="left"><strong>Sobrenome</strong></td>
+        </tr>
+        <tr>
+            <td align="center">Ana</td>
+            <td align="right">Santos</td>
+        </tr>
+    </table>
+    <hr>
+    <h2>VALIGN</h2>
+    <table width="300" height="20%" border="2">
+    <!-- O atributo valign alinha verticalmente os dados de uma célula -->
+        <tr bgcolor="#e0eeee">
+            <td valign="bottom" height="30">Nome</td>
+            <td valign="top" height="30">Sobrenome</td>
+        </tr>
+        <tr>
+            <td valign="center" height="30">Anna</td>
+            <td valign="center" height="30">Santos</td>
+        </tr>
+    </table>
+    <hr>
+    <h2>COLSPAN</h2>
+    <table width="300" height="20%" border="2">
+    <!-- O atributo colspan é utilizado para mesclar as células -->
+        <tr bgcolor="#e0eeee">
+            <td colspan="2"><strong>Dados</strong></td>
+        </tr>
+        <tr>
+            <td>Anna</td>
+            <td>Santos</td>
+        </tr>
+    </table>
+    <hr>
+    <h2>ROWSPAN</h2>
+    <table width="300" height="20%" border="2">
+        <tr bgcolor="#e0eeee">
+            <td><strong>Nome</strong></td>
+            <td><strong>Sobrenome</strong></td>
+        </tr>
+        <tr>
+            <td>Ana</td>
+            <td rowspan="2">Santos</td>
+        </tr>
+        <tr>
+            <td>Vanessa</td>
+        </tr>
+    </table>
+</body>
+</html>
