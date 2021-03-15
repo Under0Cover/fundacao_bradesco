@@ -1,0 +1,3 @@
+.tabela_borda {background-image: url(../imagens/logo_bradesco.jpg); border: solid 3px #000066;}
+.tabela_borda td {border: solid 1px;}
+.tabela_sem_borda {background-image: url(../imagens/logo_bradesco.jpg);}
