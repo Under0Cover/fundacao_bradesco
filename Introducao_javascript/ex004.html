@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decisão Condicional Simples</title>
+</head>
+<body>
+    <h2>Condicional Simples</h2>
+    <script>
+        /*
+        Objetivo: Ler dois valores, independentemente da ordem em que forem digitadas. E apresentá-los em ordem crescente.
+        */
+
+        // Declaração Variáveis
+        var numero_um;
+        var numero_dois;
+        var troca_numeros;
+
+        // Entrada de Dados
+        numero_um = parseFloat(window.prompt('Informe um número: '));
+        numero_dois = parseFloat(window.prompt('Informe outro número: '));
+
+        // Processamento de Dados
+        if (numero_um > numero_dois){
+            troca_numeros = numero_um;
+            numero_um = numero_dois;
+            numero_dois = troca_numeros;
+        }
+
+        // Saída de Dados
+        document.write('O número ' +numero_um+ ' é o menor número.');
+        document.write('<br>O número ' +numero_dois+ ' é o maior número.');
+    </script>
+</body>
+</html>
