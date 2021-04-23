@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soma em JavaScript</title>
+</head>
+<body>
+    <h3>Somatória de dois números inteiros</h3>
+
+    <script>
+        /* Objetivo: 
+            Desenvolver um programa em JavaScript que faça a leitura de dois números inteiros.
+            Apresente a soma entre eles.
+        */
+
+        // Variáveis
+        var numero_um;
+        var numero_dois;
+        var soma_numeros;
+
+        // Entrada de Dados
+        numero_um = window.prompt('Informe o primeiro número: ');
+        numero_dois = window.prompt('Informe o segundo número: ');
+
+        // Processamento de Dados
+        soma_numeros = parseFloat(numero_um) + parseFloat(numero_dois);
+
+        // Saída dos Dados
+        document.write('O resultado da soma é: ' + soma_numeros);
+    </script>
+</body>
+</html>
