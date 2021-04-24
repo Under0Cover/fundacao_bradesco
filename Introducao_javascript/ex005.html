@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decisão Condicional Composta</title>
+</head>
+<body>
+    <h2>Condicional Composta</h2>
+    <script>
+        /*
+        Objetivo: Ler dois valores, independentemente da ordem em que foram digitados, e apresentá-los em ordem crescente.
+
+        Observação: Utilizar a estrutura de decisão condicional composta (if-else).
+        */
+
+        // Declaração de variáveis
+        var numero_um;
+        var numero_dois;
+
+        // Entrada de Dados
+        numero_um = parseFloat(window.prompt('Informe o primeiro número: '));
+        numero_dois = parseFloat(window.prompt('Informe o segundo número: '));
+
+        // Processamento de Dados
+        if (numero_um >  numero_dois) {
+            document.write('O número ' +numero_um+ ' é o maior do que o ' +numero_dois+ '.');
+        } else {
+            document.write('O número ' +numero_dois+ ' é o maior do que o ' +numero_um+ '.');
+        }
+    </script>
+</body>
+</html>
