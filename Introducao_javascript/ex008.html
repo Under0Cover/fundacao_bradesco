@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operador Ternário</title>
+</head>
+<body>
+    <script>
+        /*
+        Objetivo:
+            Exemplos práticos de aplicações com Operador Ternário "?:" Operadores Relacionais e Expressão Aritimética.
+            Utilização da sintaxe: (<condição>) ? <expressão para resultado verdadeiro> : <expressão para resultado falso>
+        */
+
+        // Definição de Variáveis
+        numero = 30;
+
+        // Explicação
+        document.write('<p>--------------------------------------------------------------------------------------------------------------------------<br>');
+        document.write('<p>DEFINIÇÃO E ATRIBUIÇÃO DE VARIÁVEIS:<br>');
+        document.write('<p>var numero = 30<br>');
+        document.write("A variável 'numero' recebe o valor de 30<br>");
+
+        // Aplicação de Operador Ternário utilizando Operadores Relacionais
+        document.write('<p>--------------------------------------------------------------------------------------------------------------------------<br>');
+        document.write('<p>OPERADOR TERNÁRIO <b>( ? : )</b> com OPERADORES RELACIONAIS <b> ( ==    !=     <    >   )</b><br>');
+        
+        // ==
+        document.write('<p> numero <b>==</b> 20 <b>?</b> "Sim" <b>:</b> "Não" -> Resposta: ');
+        ((numero == 20) ? document.write('<b>Sim</b>') : document.write('<b>Não</b>'));
+        document.write(' '+numero);
+        
+        // !=
+        document.write('<br><p> numero <b>!=</b> 20 <b>?</b> "Sim" <b>:</b> "Não" -> Resposta: ');
+        ((numero != 20) ? document.write('<b>Sim</b>') : document.write('<b>Não</b>'));
+        document.write(' '+numero);
+
+        // >
+        document.write('<br><p> numero <b>></b> 20 <b>?</b> "Sim" <b>:</b> "Não" -> Resposta: ');
+        ((numero > 20) ? document.write('<b>Sim</b>') : document.write('<b>Não</b>'));
+        document.write(' '+numero);
+
+        // <
+        document.write('<br><p> numero <b><</b> 20 <b>?</b> "Sim" <b>:</b> "Não" -> Resposta: ');
+        ((numero < 20) ? document.write('<b>Sim</b>') : document.write('<b>Não</b>'));
+        document.write(' '+numero);
+
+        // Aplicação de Operador Ternário utilizando Expressão Aritimética e Operador Relacional
+        document.write('<br><p>--------------------------------------------------------------------------------------------------------------------------');
+        document.write('<br><p>OPERADOR TERNÁRIO com EXPRESSÃO ARITIMÉTICA:');
+        document.write('<br><p>(numero <b>-</b> 20) <b>==</b> 0 <b>?</b> "Sim" <b>:</b> "Não" -> Resposta: ');
+        ((numero - 20) == 0) ? document.write('<b>Sim</b>') : document.write('<b>Não</b>');
+        document.write(' '+numero);
+    </script>
+</body>
+</html>
