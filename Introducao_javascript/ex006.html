@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aninhamento de IFs</title>
+</head>
+<body>
+    <h2>Aninhamento de IFs</h2>
+    <script>
+        /* Objetivo: Calcular o salário líquido de um funcionário que trabalha por horas (horista).
+        Para desenvolver o cálculo é necessário ter as seguintes informações:
+            - Quantidade de horas trabalhadas no mês;
+            - Valor da hora de trabalho;
+            - Percentual de desconto do INSS.
+        Informar e Classificar o Salário
+        */
+
+        // Definição de Variáveis
+        var horas_trabalhadas; // Quantidade de Horas Trabalhadas
+        var valor_horas_trabalhadas; // Valor da Hora Trabalhada
+        var desconto_inss; // Percentual de Desconto do INSS
+        var total_descontos; // Total de Descontos
+        var salario_bruto; // Valor Salário Bruto
+        var salario_liquido; // Valor Salário Líquido
+
+        // Entrada de Dados
+        horas_trabalhadas = parseFloat(window.prompt('Informe a Quantidade de Horas Trabalhadas: '));
+        valor_horas_trabalhadas = parseFloat(window.prompt('Informe o Valor da Hora Trabalhada: '));
+        desconto_inss = parseFloat(window.prompt('Informe o Percentual de Desconto do INSS: '));
+
+        // Processamento de Dados
+        salario_bruto = valor_horas_trabalhadas * horas_trabalhadas;
+        total_descontos = ((desconto_inss/100) * salario_bruto);
+        salario_liquido = salario_bruto -  total_descontos;
+
+        // Saída de Dados com Consistência de Valores
+        document.write('<h3>DEMONSTRATIVO PARA CÁLCULO DE SALÁRIO LÍQUIDO');
+        document.write('<p>Quantidade de horas trabalhadas: '+horas_trabalhadas);
+        document.write('<p>Valor da Hora Trabalhada: '+valor_horas_trabalhadas);
+        document.write('<p>Percentual de Desconto do INSS: '+desconto_inss);
+        document.write('<P>____________________________________________________________________________________');
+        document.write('<p>Salário Bruto: '+salario_bruto);
+        document.write('<p>Total de Descontos do INSS: '+total_descontos);
+        document.write('<p>Salário Líquido: '+salario_liquido);
+    </script>
+</body>
+</html>
