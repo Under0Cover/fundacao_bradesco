@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laço For</title>
+</head>
+<body>
+    <h2>Laço de Repetição For</h2>
+    <script>
+        /*
+        Objetivo: Aplicação do Laço For, incrementando +2 na variável e apresentando os valores acumulados de 1 a 10.
+        */
+
+        // Definição de Variáveis
+        var numeros;
+
+        // Apresentação
+        document.write('<p>Apresentação dos valores acumulados para numeros = 1 e menor ou igual a 10; incrementando a variável de +=2<br>');
+        document.write('<p>(Note que o limite irá até 9, pois 9 + 2 = 11, portanto, maior do que 10<br>');
+
+        // Aplicação do Laço For
+        for (numeros = 1; numeros <= 10; numeros += 2){
+            document.write('<p> '+numeros+'<br>');
+        }
+    </script>
+</body>
+</html>
