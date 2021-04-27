@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Método Confirm( )</title>
+</head>
+<body>
+    <h2>Método Confirm( )</h2>
+    <script>
+        /*
+        Objetivo: Desenvolver um programa que faça o teste de execução de duas opções. Utilizando o método confirm, verificar o botão selecionado pelo usuário e apresentar a respectiva opção.
+        */
+
+        /*
+        Procedimentos:
+            - Apresentar a mensagem e capturar o valor do botão acionado, armazenando-o na variável;
+            - Verificar se o botão acionado foi o "ok":
+                - Se sim, apresentar a mensagem: "Você acionou o botão: OK";
+                - Se não, apresentar a mensagem: "Você acionou o botão: Cancelar";
+        */
+
+        // Declaração de Variáveis
+        var resposta;
+
+        // Apresentação
+        resposta = window.confirm('Selecione um dos botões');
+
+        // Processamento
+        if (resposta == true) {
+            document.write('Você acionou o botão: <b>OK</b>');
+        } else {
+            document.write('Você acionou o botão: <b>CANCELAR</b>');
+        }
+    </script>
+</body>
+</html>
