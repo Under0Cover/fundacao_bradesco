@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upper & Lower Cases</title>
+</head>
+<body>
+    <h3>Formulário de Consulta de Curso:</h3>
+    <!-- Entrada de Dados via Formulário -->
+    <p>
+        <form action="" name="formularioCurso" method="post">
+            Digite seu Curso: <input type="text" name="cursoDigitado" size="8" maxlength="4"> <p></p>
+            <input type="button" name="botaoValidar" value="Validar" onclick="cadastroCurso()">
+            <input type="reset" name="botaoCancelar" value="Cancelar">
+            Código do Curso: <input type="text" name="codigoCurso" size="15" maxlength="10">
+        </form>
+    </p>
+    <!-- Estrtura JavaScript com o método toLowerCase() -->
+    <script>
+        /*
+        Objetivo: Capturar o nome do curso e apresentar o código correspondente
+        Verificar:
+            Se a Variável de entrada for igual a sist, apresentar o código "SIST001/FB".
+                Caso contrário, apresentar a mensagem "Curso Inválido"
+        Objetos e Métodos:
+            Entrada: document.form
+            Saída: document.form (para código válido no campo de saída do formulário)
+            Saída: window.alert (para código inválido por janela de alerta)
+        */
+
+        // Definição de Variáveis
+        var valorCursoDigitado;
+
+        // Função cadastroCurso()
+        function cadastroCurso() {
+            valorCursoDigitado = document.formularioCurso.cursoDigitado.value;
+
+            if (valorCursoDigitado.toLowerCase() == 'sist') {
+                document.formularioCurso.codigoCurso.value = 'SIST001/FB';
+            } else {
+                window.alert('Curso Inválido!!!')
+            }
+        }
+    </script>
+</body>
+</html>
